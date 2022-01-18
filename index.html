@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Path to your custom app styles-->
+   
+  </head>
+  <body>
+        <!-- App root element -->
+        <div id="app">
+            <div class="view view-main">
+                <div data-name="home" class="page">
+                  
+                    <div class="navbar">
+                      <div class="navbar-inner bg-color-green">
+                        <div class="space">
+                          <i class="f7-icons text-color-white">line_horizontal_3</i>
+                          <div class="title text-color-white space-left">CÁLCULO DE IMC</div>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- Adicionando conteudo a página -->
+                     <div class="page-content">
+                        <div class="block text-align-center">  
+                           
+                            <div class="block-title">Descubra seu índice de massa corporal</div>
+                            <form class="list margin-top" id="my-form">
+                              <ul>
+                                <li>
+                                  <div class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-input-wrap text-align-left padding-top padding-bottom display-flex">
+                                        <i class="f7-icons">question_circle</i>
+                                        <div class="margin-left">Peso
+                                          <div class="item-after"><span class="badge color-green">kg</span></div>
+                                        </div>
+                                        <input class="input-pd" type="number" id="peso" data-mask="000.000" data-mask-reverse="true" name="name" placeholder="000,000">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-input-wrap text-align-left padding-top padding-bottom display-flex">
+                                        <i class="f7-icons">question_circle</i>
+                                        <div class="margin-left">Altura
+                                          <div class="item-after"><span class="badge color-green">M</span></div>
+                                        </div>
+                                        <input class="input-pd" type="number" id="altura" data-mask="0.00" data-mask-reverse="true" name="name" placeholder="0,00">
+                                      </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </form>
+                            <button class="col button button-large button-raised button-fill color-black margin-top" id="btn-calcular">CALCULAR</button>
+
+                              <div class="block">
+                                  <div class="text-align-center">
+                                      <div class="gauge demo-gauge"></div>
+                                      <p class="title">
+                                          <span class="men text-color-green"></span>
+                                      </p>
+                                  </div>
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/framework7.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+ </body>
+ </html>
